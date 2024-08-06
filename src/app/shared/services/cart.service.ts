@@ -6,21 +6,17 @@ import { CartProduct, Product } from '../types/product';
 })
 export class CartService {
 
-  constructor() { 
-    console.log('Construct the xxx service');
+  constructor() {
   }
 
   cart = signal<CartProduct[]>([]);
 
   addProduct(newProduct:CartProduct):void{
-    console.log("chegou")
     this.cart.update(products => {
       let product:CartProduct[] = products.filter(p => p.product.id == newProduct.product.id);
       if(product.length){
         let filteredProducts:CartProduct[] = products.filter(p => p.product.id !== newProduct.product.id);
         newProduct.quantity += product[0].quantity;
-        console.log("não entrou")
-        console.log(this.cart())
         return [...filteredProducts, newProduct];
       }
       console.log(this.cart())
