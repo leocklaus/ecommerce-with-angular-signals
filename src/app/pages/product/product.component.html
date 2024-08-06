@@ -11,7 +11,12 @@
               <span class="qty-display">{{qty()}}</span>
               <button (click)="addQty()">+</button>
             </div>
-            <a href="#" class="btn btn-secondary">Comprar</a>
+            <button 
+              class="btn btn-secondary" 
+              (click)="addProduct()"
+              [disabled]="qty() == 0"
+            >Add to Cart
+            </button>
           </div>
         </div>
       </div>
