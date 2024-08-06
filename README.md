@@ -6,7 +6,7 @@ Simple e-commerce project with shopping cart applying angular signals.
 
 ## About this project
 
-This project aims to build a simple eccomerce project, with a list of products and a shopping cart, aplying angular signals.
+This project aims to build a simple ecommerce project, with a list of products and a shopping cart, applying angular signals.
 
 ### The main goals for this project are:
 
