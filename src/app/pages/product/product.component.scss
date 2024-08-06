@@ -1,0 +1,30 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+
+    .qty-selector{
+        display: flex;
+        justify-content: center;
+
+        button{
+            width: 40px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+
+        span{
+            padding: 4px 12px;
+        }
+        
+    }
+
+}

@@ -1,0 +1,18 @@
+<main>
+    <div class="card" style="width: 24rem;">
+        <img src="https://picsum.photos/300/200" alt="">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p class="card-text">{{product.description}}</p>
+          <p class="card-text">${{product.price}}</p>
+          <div class="btn">
+            <div class="qty-selector">
+              <button (click)="reduceQty()">-</button>
+              <span class="qty-display">{{qty()}}</span>
+              <button (click)="addQty()">+</button>
+            </div>
+            <a href="#" class="btn btn-secondary">Comprar</a>
+          </div>
+        </div>
+      </div>
+</main>
