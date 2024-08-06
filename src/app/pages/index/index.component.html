@@ -1,0 +1,8 @@
+<main>
+    @for(product of products(); track product.id){
+        <app-card [product]="product"></app-card>
+    }
+    
+</main>
+
+<mat-paginator [length]="totalItems" [pageSize]="pageSize" [pageIndex]="currentPage" (page)="pageChanged($event)"></mat-paginator>
